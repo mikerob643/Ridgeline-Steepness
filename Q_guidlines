@@ -1,0 +1,30 @@
+        QGIS methodology
+
+Import DEM file, allbasins geojson, chi_data_map geojson, and CN geojson from lsdtopotools analysis 
+
+
+
+
+
+Use join attributes by nearest to join chi_data and CN
+    only take the stream order attribute
+    
+Reproject the joined layer to same crs as the .bil used in lsdtopotools anlaysis.
+
+
+Convert allbasins geojson raster to vector using Polygonize
+
+Join reprojected channel points by join with location , finding where the reprojected channel points are withing the vectorized allbasins layer.
+
+Add x y data to joined river network layer
+Export channels as channel csv file.this was called channel1.csv in our analysis
+
+
+Run points along gemoetery for polygonized layer. This was done at 1 meter intevals for our analysis.
+
+
+Add x y data to points along geomotry layer
+
+Add elevation to the ridgeline data with sample raster, using the .bil from the lsdtopotools analysis for the elevation data.
+
+Export the ridgeline data to cvs. this was called basins.csv in our analysis

@@ -1,0 +1,33 @@
+# Parameters for performing chi analysis
+# Comments are preceeded by the hash symbol
+# Documentation can be found here:
+# https://lsdtopotools.github.io/LSDTT_documentation/LSDTT_chi_analysis.html
+
+# These are parameters for the file i/o
+# IMPORTANT: You MUST make the write directory: the code will not work if it doens't exist.
+read fname: lsd 
+write fname: lsd
+channel heads fname: NULL
+
+# Parameter for filling the DEM
+min_slope_for_fill: 0.0001
+
+# Parameters for selecting channels and basins
+threshold_contributing_pixels: 1000
+
+
+
+# Getting the basins
+find_basins: true  
+minimum_basin_size_pixels: 10000
+find_largest_complete_basins: false
+# find_complete_basins_in_window: true
+
+
+estimate_best_fit_movern_no_bootstrap: true
+
+# Convert to json
+convert_csv_to_geojson: true
+
+
+python PlotMOverNAnalysis.py -dir /LSDTopoTools/LSDTopoTools2/OCR -fname lsd -ALL True
