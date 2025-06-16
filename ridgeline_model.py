@@ -109,7 +109,7 @@ if len(trib_spacing)>0:
     
 
 
-    #eq 15
+    #eq 12
     slope =(U/(beta))**(1/n)*(1/(crl*(tribspacing[-1]-tribspacing[0])))*((tribb**a)*(L**(a*(1-tribg)))*(((((tribspacing[-1])**(a*tribg)))-(((tribspacing[0])**(a*tribg))))/a)+(((tribspacing[0])**(a)-(tribspacing[-1])**(a))/a))
    
     cgeom=(-1/(a*crl*((tribspacing[-1]/L)-(tribspacing[0]/L))))*(((tribspacing[0]/L)**a)-((tribspacing[-1]/L)**a)+((tribb**a)*((tribspacing[-1]/L))**(a*tribg))-((tribb**a)*((tribspacing[0]/L))**(a*tribg)))
