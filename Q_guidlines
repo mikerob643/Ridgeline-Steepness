@@ -20,11 +20,13 @@ Add x y data to joined river network layer
 Export channels as channel csv file.this was called channel1.csv in our analysis
 
 
-Run points along gemoetery for polygonized layer. This was done at 1 meter intevals for our analysis.
+Run points along geometry for polygonized layer. This was done at 10 meter intervals for our analysis.
 
+Distance along ridgelines was calculated as the straight line distance between the "points along geometry" derived points.
 
 Add x y data to points along geomotry layer
 
 Add elevation to the ridgeline data with sample raster, using the .bil from the lsdtopotools analysis for the elevation data.
 
 Export the ridgeline data to cvs. this was called basins.csv in our analysis
+
